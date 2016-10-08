@@ -1,0 +1,75 @@
+********************************************************************************
+PACKAGE-LOG: 2016-10-06 11:03:01
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.1.16
+WORDPRESS:	4.6.1
+PHP INFO:	7.0.8-0ubuntu0.16.04.3 | SAPI: apache2handler
+SERVER:		Apache/2.4.18 (Ubuntu) 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (128M default) 
+MEMORY STACK: 2MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported 
+TABLES: total:13 | filtered:0 | create:13 
+FILTERED: [] 
+SQL CREATED: 20161006_allesvoordekunsten_57f62f32116142473161006110210_database.sql 
+SQL FILE SIZE: 1.62MB (1693795) 
+SQL FILE TIME: 2016-10-06 11:03:01 
+SQL RUNTIME: 0.06 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /var/www/html/allesvdk 
+ARCHIVE FILE: 20161006_allesvoordekunsten_57f62f32116142473161006110210_archive.zip 
+FILTERS: *OFF* 
+DIRS:  not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	39.81MB 
+STATS:	Dirs 265 | Files 2,241 
+SQL ADDED: 20161006_allesvoordekunsten_57f62f32116142473161006110210_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 2506
+    [filename] => /var/www/html/allesvdk/wp-snapshots/tmp/20161006_allesvoordekunsten_57f62f32116142473161006110210_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 18.76MB 
+ARCHIVE RUNTIME: 2.33 sec. 
+MEMORY STACK: 4MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+Template parsed with new data 
+Complete [/var/www/html/allesvdk/wp-snapshots/tmp/20161006_allesvoordekunsten_57f62f32116142473161006110210_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 1.62MB 
+Installer File: 347.64KB 
+Archive File: 18.76MB  
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 2.60 sec.
+PEAK PHP MEMORY USED: 4MB
+DONE PROCESSING => 20161006_allesvoordekunsten 2016-10-06 11:03:04
+ 

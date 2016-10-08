@@ -1,0 +1,8 @@
+# Ignore the following
+.DS_Store
+wp-config.php
+wp-config.php~
+.htaccess
+wp-content/uploads/
+wp-content/themes/Parallex-One-child/scss/
+wp-content/themes/Parallex-One-child/.sass-cache/

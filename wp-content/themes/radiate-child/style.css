@@ -1,0 +1,317 @@
+/*
+Theme Name: Radiate-Child
+Theme URI: http://themegrill.com/themes/radiate/
+Author: ThemeGrill
+Author URI: http://themegrill.com/
+Description: Radiate is a clean, creative and light retina ready responsive blogging theme supporting parallax header image. It integrates primary color option, custom background, custom css and few other features through WordPress customizer. The theme is translation ready and you can get free support on http://themegrill.com/support-forum. View demo at http://demo.themegrill.com/radiate.
+Version: 1.2.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: radiate
+Text Domain: radiate
+Domain Path: /languages/
+Tags: two-columns, right-sidebar, custom-header, flexible-header, custom-background, custom-menu, custom-colors, post-formats, sticky-post, threaded-comments, translation-ready, featured-images, rtl-language-support, theme-options, blog, e-commerce
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+@import url("../radiate/style.css");
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@font-face {
+  font-family: 'Stardos Stencil Bold';
+  src: url("fonts/stardos stencil/StardosStencil-Bold.ttf"); }
+@font-face {
+  font-family: 'AvenirNextLTPro-Medium';
+  src: url("fonts/2FDF27_8_0.woff2") format("woff2"), url("fonts/2FDF27_8_0.woff") format("woff"), url("fonts/2FDF27_8_0.ttf") format("truetype"), url("fonts/2FDF27_8_0.eot") format("eot"); }
+body {
+  font-family: "AvenirNextLTPro-Medium", "Josefin Sans", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Stardos Stencil Bold'; }
+
+p {
+  font-family: "AvenirNextLTPro-Medium", "Josefin Sans", sans-serif; }
+
+header#masthead.site-header {
+  margin-bottom: 220px; }
+
+.site-title a,
+.entry-content h2,
+h1.entry-title,
+h3.widget-title,
+h6,
+.header-search-icon:before {
+  color: #ff0000;
+  text-align: center;
+  text-shadow: 1px 1px 2px lightgrey;
+  letter-spacing: 2px;
+  background-color: #fff;
+  opacity: 0.9; }
+
+h1.entry-title {
+  margin: 0 auto;
+  width: 50%; }
+
+h2.title {
+  margin: 260px auto 0;
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  background: black;
+  padding: 4px 0;
+  text-transform: uppercase;
+  max-width: 70%; }
+
+h3.subheader {
+  background-color: #fff;
+  width: 40%; }
+
+.main-navigation a:hover,
+.main-navigation ul li.current-menu-item a,
+.main-navigation ul li.current_page_ancestor a,
+.main-navigation ul li.current-menu-ancestor a,
+.main-navigation ul li.current_page_item a,
+.main-navigation ul li:hover > a,
+#masthead .search-form {
+  background-color: #ff0000;
+  font-family: "AvenirNextLTPro-Medium", "Josefin Sans", sans-serif; }
+
+.main-navigation ul li ul li a:hover,
+.main-navigation ul li ul li:hover > a,
+.main-navigation ul li.current-menu-item ul li a:hover {
+  background-color: #ff0000;
+  color: #ffffff; }
+
+.entry-content ul {
+  list-style: none; }
+
+figure.image1 {
+  width: 75%;
+  margin: 0 auto; }
+
+.content-area {
+  width: 100% !important;
+  text-align: center;
+  margin-bottom: 3em; }
+
+.header-search-icon {
+  border-left: none; }
+
+p {
+  text-align: justify;
+  padding: 2%;
+  color: black; }
+
+h4.side-title {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -4px;
+  padding: 4px 0; }
+
+ul.playlist,
+ul.playlist2 {
+  clear: both;
+  font-size: 80%;
+  padding: 4% 2%;
+  background-color: #ff0000;
+  color: white;
+  text-align: center; }
+  ul.playlist li,
+  ul.playlist2 li {
+    font-weight: bold;
+    font-size: medium; }
+  ul.playlist a,
+  ul.playlist2 a {
+    color: black;
+    background-color: white; }
+
+ul.playlist2 {
+  color: #ff0000;
+  background-color: white; }
+
+figure.front-image {
+  width: 80%; }
+
+section.playlist h4,
+section.playlist2 h4 {
+  color: white;
+  background: black;
+  width: 50%;
+  float: right; }
+
+section.playlist2 h4 {
+  float: left; }
+
+article.exposure {
+  width: 50%;
+  font-size: 95%; }
+
+.exposure1 {
+  float: left; }
+
+.exposure2 {
+  float: right; }
+
+.popmake-exposure-1,
+.popmake-exposure-2 {
+  background-image: url(img/icka.jpg);
+  width: 200px;
+  margin: 0 auto 1em;
+  height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  color: #fafafa;
+  font-family: 'Stardos Stencil Bold';
+  font-size: 1.75em;
+  border-radius: 5%;
+  text-align: center;
+  text-shadow: 1px 1px 2px #ff0000; }
+
+.popmake-exposure-2 {
+  background-image: url(img/jahlbom.jpg); }
+
+a#scroll-up span {
+  color: #ff0000; }
+
+section.credits-block {
+  clear: both;
+  margin: 1em auto;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  background-color: #fff; }
+  section.credits-block p {
+    line-height: 1em;
+    padding-top: 0.5em; }
+
+section.about {
+  width: 85%;
+  margin: 0 auto; }
+  section.about p {
+    line-height: 1em; }
+
+section.main-content,
+section.main-content2,
+section.side-content,
+section.side-content2 {
+  width: 55%;
+  float: left;
+  background-color: #fff;
+  margin: 0.5em 0;
+  opacity: 0.9;
+  border: 1px solid #ebeae8; }
+
+section.side-content,
+section.side-content2 {
+  width: 40%;
+  float: right;
+  background-color: transparent;
+  border: none; }
+
+section.main-content2 {
+  clear: both;
+  float: right; }
+
+section.side-content2 {
+  float: left; }
+
+p.alinea-kamps-1 {
+  width: 80%;
+  margin: 0 auto; }
+
+div.article-content {
+  width: 100%;
+  height: 25vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+#post-56,
+#post-174 {
+  background-image: url(img/Richard-large.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% -700%;
+  background-attachment: fixed; }
+
+#post-174 {
+  background-image: url(img/Nut-van-Tantes-flyer-v2-outl-13_medium.jpg);
+  background-position: 50% 50%; }
+
+#parallax-bg #page-id-8 {
+  background-image: url(img/swan/header-image-large.jpg); }
+
+blockquote {
+  border: none; }
+
+@media screen and (max-width: 782px) {
+  body {
+    width: 100%; }
+
+  h1.entry-title,
+  h3.subheader,
+  section.main-content,
+  section.main-content2,
+  section.side-content2,
+  section.side-content {
+    width: 100%; } }
+@media screen and (max-width: 320px) {
+  header#masthead.site-header {
+    margin-bottom: 100px; }
+
+  h2.title {
+    margin: 130px auto 0;
+    font-size: 2em;
+    max-width: 100%; }
+
+  .site-branding {
+    max-width: 50%; }
+
+  h3.site-title {
+    font-size: 18px;
+    line-height: 1em; } }
+@media screen and (max-width: 768px) {
+  h4.menu-toggle {
+    color: #ff0000 !important; } }
+@media screen and (max-width: 600px) {
+  #content,
+  .hentry {
+    padding: 0; }
+
+  .site-title {
+    line-height: 1em; }
+
+  h2.title {
+    margin: 130px auto 0;
+    font-size: 2em;
+    max-width: 100%; }
+
+  p {
+    line-height: 1.25em;
+    text-align: left; }
+
+  section.main-content {
+    border: none; } }
+
+/*# sourceMappingURL=style.css.map */
