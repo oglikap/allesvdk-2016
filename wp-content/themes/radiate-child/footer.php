@@ -14,13 +14,16 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div>
-			<a target="_blank" href="https://www.facebook.com/homsktheater/"><i class="fa fa-facebook-official"></i></a>
-			<!--<a href="#" class="w3-hover-text-grey w3-show-inline-block"><i class="fa fa-flickr"></i></a>-->
-			<a href="#"><i class="fa fa-linkedin"></i></a>
-			<p>U bracht het tot hier. Gefeliciteerd!</p>
-			<p>© Eelco Venema <small>i.s.m.</small><span style="font-family:'Baloo Da';font-size:1em;"> BLAUWDRUK.net</span></p>
-		</div>
+		<div class="site-info">
+			<?php do_action( 'radiate_credits' ); ?>
+			<?php _e( '&copy;Alles voor de Kunsten i.s.m ', 'Rutger Kroon' ); ?>
+			<a href="http://rutgerkroon.nl/" rel="generator" target="_blank"><?php _e( 'Rutger Kroon' ); ?></a>
+			<span class="sep"> | </span>
+			<a href="http://facebook.com/" rel="generator"><?php _e( 'Facebook' ); ?></a>
+			<span class="sep"> | </span>
+			<a href="http://twitter.com/" rel="generator"><?php _e( 'Twitter' ); ?></a>
+
+		</div><!-- .site-info -->
 
 	</footer><!-- #colophon -->
    <a href="#masthead" id="scroll-up"><span class="genericon genericon-collapse"></span></a>

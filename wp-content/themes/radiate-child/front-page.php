@@ -3,7 +3,7 @@
  * The template file to show the front page display.
  *
  * @package ThemeGrill
- * @subpackage Radiate-Child
+ * @subpackage Radiate-Chil
  * @since Radiate 1.0
  */
 
@@ -72,5 +72,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?//php get_sidebar(); ?>
 <?php get_footer(); ?>
