@@ -44,7 +44,7 @@ p {
   font-family: "AvenirNextLTPro-Medium", "Josefin Sans", sans-serif; }
 
 header#masthead.site-header {
-  margin-bottom: 220px; }
+  margin-bottom: 440px; }
 
 .hentry {
   background-color: transparent; }
@@ -67,13 +67,16 @@ h1.entry-title {
   width: 50%; }
 
 h2.title {
-  margin: 100px auto 0;
+  margin: 80px auto 0;
   text-align: right;
   color: #777;
   text-shadow: 1px 1px white;
-  padding: 4px 0;
+  font-size: 3em;
+  padding: 8px 4px;
   opacity: 1;
   font-family: 'Scooter'; }
+  h2.title .dot {
+    color: orange; }
 
 h3.subheader {
   background-color: #fff;
@@ -120,6 +123,9 @@ figure.image1 {
   text-align: center;
   margin-bottom: 3em; }
 
+#primary {
+  margin-top: -15em; }
+
 .header-search-icon {
   border-left: none; }
 
@@ -159,21 +165,33 @@ ul.playlist2 {
   background-color: white; }
 
 article.front-image-right {
-  width: 80%;
-  float: right;
-  margin-bottom: 0.5em; }
+  width: 90%;
+  float: right; }
 
 article.front-image-left {
-  width: 80%;
-  float: left;
+  width: 90%;
+  float: left; }
+
+.image-front {
   background-color: #fff;
-  padding: 0 1em 0.5em; }
+  padding: 1em; }
 
 .image-credits {
+  background-color: #000;
+  color: white;
   font-size: 80%;
   text-align: center;
-  max-width: 80%;
-  float: right; }
+  min-width: 60%;
+  -webkit-border-radius: 1%;
+  -moz-border-radius: 1%;
+  -ms-border-radius: 1%;
+  border-radius: 1%;
+  float: right;
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg); }
 
 section.playlist h4,
 section.playlist2 h4 {
@@ -307,6 +325,12 @@ div.article-content {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%; }
+
+body.page-id-240 #parallax-bg {
+  background-image: url(img/scheldwacht/header-large.jpg); }
+
+body.page-id-301 #parallax-bg {
+  background-image: url(img/kroon/header-large.jpg); }
 
 blockquote {
   border: none;

@@ -20,7 +20,7 @@
         $playlist_4 = get_field("playlist_4");
         $credits_1 = get_field("credits_1");
         $subheader = get_field("subheader");
-        $image_1 = get_field("image_1");
+//        $image_1 = get_field("image_1");
         $image_2 = get_field("image_2");
         $fotocredits_1 = get_field("fotocredits_1");
         $fotocredits_2 = get_field("fotocredits_2");
@@ -49,7 +49,7 @@
         <?php echo $playlist_1; ?>
         <article class="front-image-left">
           <span class="image-credits"><?php echo $fotocredits_1; ?></span>
-          <?php echo wp_get_attachment_image($image_1, $size); ?>
+          <?php the_content();// echo wp_get_attachment_image($image_1, $size); ?>
         </article>
       </section>
       <section class="main-content2">

@@ -66,7 +66,7 @@ p {
   font-family: "AvenirNextLTPro-Medium", "Josefin Sans", sans-serif;
 }
 header#masthead.site-header {
-  margin-bottom: 220px;
+  margin-bottom: 440px;
 }
 .hentry {
   background-color: transparent;
@@ -89,20 +89,24 @@ h1.entry-title {
   width: 50%;
 }
 h2.title {
-  margin: 100px auto 0;
+  margin: 80px auto 0;
   text-align: right;
 //  color: #ff0000;
   color: #777;
   text-shadow: 1px 1px white;
-//  font-size: 4em;
+  font-size: 3em;
 //  background: #444444;
 //  border: 1px solid white;
-  padding: 4px 0;
+  padding: 8px 4px;
 //  text-transform: uppercase;
   opacity: 1;
 //  @include transform(rotate(-1deg));
 //  max-width: 50%;
   font-family: 'Scooter';
+  .dot {
+//    color: #ff0000;
+    color: orange;
+  }
 }
 h3.subheader {
   background-color: #fff;
@@ -146,6 +150,9 @@ figure.image1 {
   width: 100% !important;
   text-align: center;
   margin-bottom: 3em;
+}
+#primary {
+  margin-top: -15em;
 }
 #secondary {
 //  width: 33%;
@@ -191,25 +198,28 @@ ul.playlist2 {
   background-color: white;
 }
 article.front-image-right {
-  width: 80%;
+  width: 90%;
   float: right;
-  margin-bottom: 0.5em;
+//  padding: 1em;
+//  margin-bottom: 0.5em;
 }
 article.front-image-left {
-  width: 80%;
+  width: 90%;
   float: left;
+}
+.image-front {
   background-color: #fff;
-  padding: 0 1em 0.5em;
+  padding: 1em;
 }
 .image-credits {
-//  background-color: #777;
-//  color: white;
+  background-color: #000;
+  color: white;
   font-size: 80%;
   text-align: center;
-  max-width: 80%;
-//  @include border-radius(1%);
+  min-width: 60%;
+  @include border-radius(1%);
   float: right;
-//  @include transform(rotate(-2deg));
+  @include transform(rotate(-2deg));
 }
 section.playlist h4,
 section.playlist2 h4 {
@@ -325,16 +335,23 @@ div.article-content {
 //  background-position: 50% 50%;
 }
 #parallax-bg {
-  #page-id-8 {
-//    background-image: url(img/swan/header-image-large.jpg);
-  }
-}
-#parallax-bg {
 //  opacity: 0.8;
   background-image: url(img/swan/header-image-large.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%;
+}
+#parallax-bg {
+  #page-id-8 {
+//    background-image: url(img/swan/header-image-large.jpg);
+  }
+
+}
+body.page-id-240 #parallax-bg {
+  background-image: url(img/scheldwacht/header-large.jpg);
+}
+body.page-id-301 #parallax-bg {
+  background-image: url(img/kroon/header-large.jpg);
 }
 .header-wrap {
 //  background-color: transparent;
