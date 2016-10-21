@@ -53,6 +53,7 @@ and Blueprint http://www.blueprintcss.org/
 
 body {
   font-family: "AvenirNextLTPro-Medium", "Josefin Sans", sans-serif;
+  background-color: #eaeaea;
 }
 h1,
 h2,
@@ -65,6 +66,13 @@ h6 {
 p {
   font-family: "AvenirNextLTPro-Medium", "Josefin Sans", sans-serif;
 }
+
+/* =Layout
+----------------------------------------------- */
+#primary {
+  margin-top: -15em;
+}
+
 header#masthead.site-header {
   margin-bottom: 440px;
 }
@@ -84,27 +92,32 @@ h6,
   background-color: #fff;
   opacity: 0.9;
 }
-h1.entry-title {
+h1.entry-title,
+h2.entry-title {
   margin: 0 auto;
-  width: 50%;
+  width: 65%;
+  .dot {
+    color: #777;
+  }
 }
 h2.title {
-  margin: 80px auto 0;
+  margin: 0 auto -6.5em;
   text-align: right;
 //  color: #ff0000;
-  color: #777;
-  text-shadow: 1px 1px white;
+  color: #fff;
+  text-shadow: 1px 1px grey;
   font-size: 3em;
 //  background: #444444;
-//  border: 1px solid white;
   padding: 8px 4px;
 //  text-transform: uppercase;
   opacity: 1;
 //  @include transform(rotate(-1deg));
 //  max-width: 50%;
   font-family: 'Scooter';
+  position: absolute;
+  top: 3%;
+  right: 2%;
   .dot {
-//    color: #ff0000;
     color: orange;
   }
 }
@@ -129,7 +142,9 @@ h3.subheader {
 }
 .main-navigation ul li ul li a:hover,
 .main-navigation ul li ul li:hover > a,
-.main-navigation ul li.current-menu-item ul li a:hover {
+.main-navigation ul li.current-menu-item ul li a:hover,
+.main-small-navigation ul > .current_page_item,
+.main-small-navigation ul > .current-menu-item {
     background-color: #ff0000;
     color: #ffffff;
     font-size: 1em;
@@ -142,6 +157,9 @@ h3.subheader {
 .entry-content ul {
   list-style: none;
 }
+.header-wrap {
+//  height: 12.5vw;
+}
 figure.image1 {
   width: 75%;
   margin: 0 auto;
@@ -150,12 +168,6 @@ figure.image1 {
   width: 100% !important;
   text-align: center;
   margin-bottom: 3em;
-}
-#primary {
-  margin-top: -15em;
-}
-#secondary {
-//  width: 33%;
 }
 .header-search-icon {
   border-left: none;
@@ -197,11 +209,10 @@ ul.playlist2 {
   color: #ff0000;
   background-color: white;
 }
-article.front-image-right {
+article.front-image {
   width: 90%;
-  float: right;
-//  padding: 1em;
-//  margin-bottom: 0.5em;
+  margin: 0 auto;
+  padding: 0.5em 0;
 }
 article.front-image-left {
   width: 90%;
@@ -353,13 +364,22 @@ body.page-id-240 #parallax-bg {
 body.page-id-301 #parallax-bg {
   background-image: url(img/kroon/header-large.jpg);
 }
+body.page-id-56 #parallax-bg {
+  background-image: url(img/kamps/header-large.jpg);
+}
+body.page-id-133 #parallax-bg {
+  background-image: url(img/boost/header-large.jpg);
+}
+body.page-id-43 #parallax-bg {
+  background-image: none;
+}
 .header-wrap {
 //  background-color: transparent;
 }
 blockquote {
   border: none;
   clear: both;
-//  background: #8a8a8a;
+  margin-left: 1em;
   border-left: 3px solid #fff2ad;
   padding: 0 2%;
   p {
@@ -367,12 +387,19 @@ blockquote {
   }
 }
 #colophon {
-  background-color: black;
-  color: white;
+  background-color: inherit;
+  color: #ff0000;
+  border-top: 1px dotted #ff0000;
+  a {
+    color: #777;
+  }
+  a:hover {
+    color: #999;
+  }
 }
 ul.sub-menu .menu-item {
   border-bottom: 1px solid #ff0000;
-  line-height: 2.5em;
+  line-height: 2em;
 }
 ul.sub-menu .menu-item:last-child {
   border-bottom: none;
@@ -384,84 +411,17 @@ ul.sub-menu .menu-item:last-child {
 
 //GROUPS
 
-.box1,
-.box2,
-.box3,
-.box4,
-.box5,
-.box6,
-.box7,
-.box8,
-.box9,
-.box10,
-.box11,
-.box12,
-.box13,
-.box14,
-.box15,
-.box16 {
-  width: 25%;
-  height: 25vw;
-  float: left;
-//  background: red;
-  @include flexbox;
-  @include justify-content(center);
-  @include align-items(center);
-  .group-modal1,
-  .group-modal2 {
-    width: 85%;
-    height: 85%;
-    background-image: url(img/artjan_small.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100% 80%;
-    background-color: #c1c1c1;
-    opacity: 0.8;
-    border: 3px solid white;
-    border: 1px solid black;
-    margin: 0 auto;
-    .group-content {
-      height: 80%;
-      text-align: center;
-      h4.group-title, p {
-        padding-top: 8px;
-        color: white;
-        text-shadow: 1px 1px black;
-      }
-      p {
-        font-size: .875em;
-      }
-    }
-    .read-more {
-      width: 100%;
-      height: 20%;
-      @include flexbox;
-      @include justify-content(center);
-      @include align-items(center);
-      a {
-        color: white;
-        padding: 2%;
-        border: 1px solid white;
-      }
-    }
-  }
-  .group-modal2 {
-    background-image: url(img/beppe-costa-small.jpg);
-  }
-}
 
-.box3,
-.box7 {
-  float: right;
-}
 
-ul.img-list {
+ul.img-list,
+article ul.news-main {
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-
-ul.img-list li {
+ul.img-list li,
+article ul.news-main li {
   display: inline-block;
   height: 200px;
   margin: 0 1em 1em 0;
@@ -494,10 +454,79 @@ ul.img-list li:hover span.text-content {
 }
 // END GROUPS
 
-@media screen and (max-width: 782px) {
+/* NEWS*/
 
+ul.news-main li {
+  width: 30%;
+  vertical-align: baseline;
+  height: auto;
+}
+ul.news-main {
+  width: 95%;
+  margin: 1em auto;
+  @include flexbox;
+  height: 300vh;
+  @include flex-wrap(wrap);
+  @include justify-content(space-around);
+  @include align-items(flex-start);
+}
+.news-excerpt {
+  background-color: #f1f1f1;
+  @include border-radius(1%);
+  padding: 1% 0;
+  p {
+    padding: 2%;
+  }
+  h2 {
+    letter-spacing: -2px;
+    a {
+      color: #ff0000;
+    }
+  }
+}
+span.news-image {
+  width: 100%;
+}
+/* Small menu */
+.site-header .menu-toggle:hover {
+    background: #ff0000;
+}
+.main-small-navigation li:hover {
+    background: #ff0000;
+}
+.main-small-navigation ul > .current_page_item,
+.main-small-navigation ul > .current-menu-item {
+    background: #ff0000;
+}
+.main-small-navigation ul li ul li a:hover,
+.main-small-navigation ul li ul li:hover > a,
+.main-small-navigation ul li.current-menu-item ul li a:hover {
+    background-color: #ff0000;
+}
+
+@media screen and (max-width: 768px) {
+  #primary,
+  #secondary {
+      float: none;
+      width: 100%;
+  }
+  #parallax-bg {
+    margin-top: 3em;
+  }
   body {
     width: 100%;
+  }
+  h1.site-title a img {
+    width: 70%;
+  }
+  .site-branding {
+    max-width: 40%;
+  }
+  .main-small-navigation ul.menunav-menu {
+    width: 60%;
+  }
+  .main-navigation {
+    max-width: 36%;
   }
   h1.entry-title,
   h3.subheader,
@@ -507,16 +536,20 @@ ul.img-list li:hover span.text-content {
   section.side-content {
     width: 100%;
   }
+  h2.title {
+    top: 2%;
+//    font-size: 2em;
+//    max-width: 100%;
+  }
+  ul.sub-menu .menu-item {
+    line-height: 0.75em;
+  }
 }
 @media screen and (max-width: 320px) {
   header#masthead.site-header {
     margin-bottom: 100px;
   }
-  h2.title {
-    margin: 130px auto 0;
-    font-size: 2em;
-    max-width: 100%;
-  }
+
   .site-branding {
     max-width: 50%;
   }
@@ -540,15 +573,25 @@ ul.img-list li:hover span.text-content {
     line-height: 1em;
   }
   h2.title {
-    margin: 130px auto 0;
+//    margin: 130px auto 0;
     font-size: 2em;
-    max-width: 100%;
+//    max-width: 100%;
   }
   p {
     line-height: 1.25em;
     text-align: left;
+    font-size: 0.875em;
+  }
+  h4.side-title {
+    font-size: 1.125em;
+  }
+  h1.entry-title {
+    line-height: 1.125em;
   }
   section.main-content {
     border: none;
+  }
+  section.credits-block {
+    max-width: 95%;
   }
 }

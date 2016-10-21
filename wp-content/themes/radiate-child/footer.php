@@ -19,9 +19,10 @@
 			<?php _e( '&copy;Alles voor de Kunsten i.s.m ', 'Rutger Kroon' ); ?>
 			<a href="http://rutgerkroon.nl/" rel="generator" target="_blank"><?php _e( 'Rutger Kroon' ); ?></a>
 			<span class="sep"> | </span>
-			<a href="http://facebook.com/" rel="generator"><?php _e( 'Facebook' ); ?></a>
+			<a href="http://facebook.com/" rel="generator"><?php _e( '<i class="fa fa-facebook"></i>' ); ?></a>
 			<span class="sep"> | </span>
-			<a href="http://twitter.com/" rel="generator"><?php _e( 'Twitter' ); ?></a>
+			<!--<a href="http://twitter.com/" rel="generator"><//?php _e( 'Twitter' ); ?></a>-->
+			<a href="#" rel="generator"><i class="fa fa-twitter"></i></a>
 
 		</div><!-- .site-info -->
 

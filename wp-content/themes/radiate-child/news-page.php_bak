@@ -1,0 +1,127 @@
+<?php
+/*
+Template Name: News Page
+*/
+?>
+
+<?php get_header(); ?>
+
+
+	<article>
+    <?php $image_1 = get_field("image_1");
+          $image_2 = get_field("image_2");
+          $image_3 = get_field("image_3");
+          $image_4 = get_field("image_4");
+          $image_5 = get_field("image_5");
+          $image_6 = get_field("image_6");
+          $image_7 = get_field("image_7");
+          $image_8 = get_field("image_8");
+          $image_9 = get_field("image_9");
+          $image_10 = get_field("image_10");
+          $size = "full";
+          $header_1 = get_field("header_1");
+          $header_2 = get_field("header_2");
+          $header_3 = get_field("header_3");
+          $header_4 = get_field("header_4");
+          $header_5 = get_field("header_5");
+          $header_6 = get_field("header_6");
+          $header_7 = get_field("header_7");
+          $header_8 = get_field("header_8");
+          $header_9 = get_field("header_9");
+          $header_10 = get_field("header_10");
+          $excerpt_1 = get_field("excerpt_1");
+          $excerpt_2 = get_field("excerpt_2");
+          $excerpt_3 = get_field("excerpt_3");
+          $excerpt_4 = get_field("excerpt_4");
+          $excerpt_5 = get_field("excerpt_5");
+          $excerpt_6 = get_field("excerpt_6");
+          $excerpt_7 = get_field("excerpt_7");
+          $excerpt_8 = get_field("excerpt_8");
+          $excerpt_9 = get_field("excerpt_9");
+          $excerpt_10 = get_field("excerpt_10");
+     ?>
+     <?php while ( have_posts() ) : the_post();
+      ?>
+    <ul class="news-main">
+      <li class="news-excerpt">
+        <h2><a href="http://localhost/allesvdk/2016/10/alles-voor-de-kunsten-is-klaar-voor-het-nieuwe-seizoen/"><?php echo $header_1; ?></a></h2>
+        <p><?php echo $excerpt_1; ?></p>
+        <span class="news-image"><?php echo wp_get_attachment_image($image_1, $size); ?></span>
+      </li>
+      <li class="news-excerpt">
+        <?php echo wp_get_attachment_image($image_2, $size); ?>
+        <h2><a href="http://localhost/allesvdk/2016/10/publiciteitsmateriaal-seizoen-16-17/"><?php echo $header_2; ?></a></h2>
+        <p><?php echo $excerpt_2; ?></p>
+      </li>
+      <li class="news-excerpt">
+        <h2><a href="http://localhost/allesvdk/2016/10/nieuw-in-ons-aanbod/"><?php echo $header_3; ?></a></h2>
+        <p><?php echo $excerpt_3; ?></p>
+        <?php echo wp_get_attachment_image($image_3, $size); ?>
+      </li>
+      <li class="news-excerpt">
+        <h2><a href="http://localhost/allesvdk/2016/10/weet-je-wat-ook-niet-zo-leuk-is/"><?php echo $header_4; ?></a></h2>
+        <p><?php echo $excerpt_4; ?></p>
+        <?php echo wp_get_attachment_image($image_4, $size); ?>
+      </li>
+      <li class="news-excerpt">
+        <h2><a href="http://localhost/allesvdk/2016/10/seizoen-20152016-van-start/"><?php echo $header_5; ?></a></h2>
+        <p><?php echo $excerpt_5; ?></p>
+      </li>
+      <li class="news-excerpt">
+        <h2><a href="http://localhost/allesvdk/2016/10/alles-voor-de-kunsten-persbericht/"><?php echo $header_6; ?></a></h2>
+        <p><?php echo $excerpt_6; ?></p>
+        <?php echo wp_get_attachment_image($image_6, $size); ?>
+      </li>
+      <li class="news-excerpt">
+        <h2><a href="http://localhost/allesvdk/2016/10/alles-voor-de-kunsten-in-seizoen-20152016/"><?php echo $header_7; ?></a></h2>
+        <p><?php echo $excerpt_7; ?></p>
+      </li>
+      <li class="news-excerpt">
+        <h2><a href="http://localhost/allesvdk/2016/10/horror-geselecteerd-voor-het-vlaams-theaterfestival/"><?php echo $header_8; ?></a></h2>
+        <p><?php echo $excerpt_8; ?></p>
+      </li>
+      <li class="news-excerpt">
+        <h2><a href="http://localhost/allesvdk/2016/10/jakop-ahlbom-genomimeerd-voor-amsterdamprijs-voor-de-kunst-2015/"><?php echo $header_9; ?></a></h2>
+        <p><?php echo $excerpt_9; ?></p>
+      </li>
+      <li class="news-excerpt">
+        <h2><a href="http://localhost/allesvdk/2016/10/horror-geselecteerd-voor-tf/"><?php echo $header_10; ?></a></h2>
+        <p><?php echo $excerpt_10; ?></p>
+      </li>
+<!--		<//?php // Display blog posts on any page @ http://m0n.co/l
+		$temp = $wp_query; $wp_query= null;
+		$wp_query = new WP_Query(); $wp_query->query('showposts=10' . '&paged='.$paged);
+		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+
+      <li>
+
+        <h2><a href="<//?php the_permalink(); ?>" title="Read more"><//?php the_title(); ?></a></h2>
+        <//?php the_excerpt(); ?>
+      </li>
+
+		<//?php endwhile; ?>
+  </ul>
+
+		<//?php if ($paged > 1) { ?>
+
+		<nav id="nav-posts">
+			<div class="prev"><//?php next_posts_link('&laquo; Previous Posts'); ?></div>
+			<div class="next"><//?php previous_posts_link('Newer Posts &raquo;'); ?></div>
+		</nav>
+
+		<//?php } else { ?>
+
+		<nav id="nav-posts">
+			<div class="prev"><//?php next_posts_link('&laquo; Previous Posts'); ?></div>
+		</nav>
+
+		<//?php } ?>
+
+		<//?php wp_reset_postdata(); ?>-->
+    </ul>
+  <?php endwhile; // end of the loop. ?>
+  <?php wp_reset_query(); // resets the altered query back to the original ?>
+	</article>
+
+<?php //get_sidebar(); ?>
+<?php get_footer(); ?>

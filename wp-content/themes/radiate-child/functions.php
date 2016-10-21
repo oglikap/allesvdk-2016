@@ -24,5 +24,16 @@ add_action( 'init', 'register_footer_menu' );
  						'rewrite' => array( 'slug' => 'groups' ),
  				)
  		);
- 	 }
+   register_post_type( 'news',
+       array(
+           'labels' => array(
+               'name' => __( 'News' ),
+               'singular_name' => __( 'News' )
+           ),
+           'public' => true,
+           'has_archive' => true,
+           'rewrite' => array( 'slug' => 'news' ),
+       )
+   );
+  }
  	 add_action( 'init', 'create_custom_post_types' );

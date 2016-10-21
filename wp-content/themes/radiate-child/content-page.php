@@ -3,8 +3,8 @@
  * The template used for displaying page content in page.php
  *
  * @package ThemeGrill
- * @subpackage Radiate
- * @since Radiate 1.0
+ * @subpackage Radiate-Child
+ * @since Radiate-Child 1.0
  */
 ?>
 
@@ -40,26 +40,26 @@
 	<div class="entry-content">
 
     <article class="article-content">
-      <h3 class="subheader"><?php// echo $subheader; ?></h3>
+<!--      <h3 class="subheader"><//?php echo $subheader; ?></h3>-->
       <section class="main-content">
         <?php echo $alinea_1; ?>
         <?php echo $alinea_2; ?>
       </section>
       <section class="side-content">
         <?php echo $playlist_1; ?>
-        <article class="front-image-left">
+        <article class="front-image">
           <span class="image-credits"><?php echo $fotocredits_1; ?></span>
           <?php the_content();// echo wp_get_attachment_image($image_1, $size); ?>
         </article>
       </section>
       <section class="main-content2">
-        <article class="front-image-right">
+        <article class="front-image">
           <span class="image-credits"><?php echo $fotocredits_2; ?></span>
           <?php echo wp_get_attachment_image($image_2, $size); ?>
         </article>
         <?php echo $alinea_3; ?>
-        <?php echo $video; ?>
         <?php echo $alinea_4; ?>
+        <?php echo $video; ?>
         <?php echo $alinea_5; ?>
         <?php echo $modal_1; ?>
         <?php echo $modal_2; ?>
@@ -75,7 +75,7 @@
         <?php echo $playlist_4; ?>
       </section>
     </article>
-		<?php// the_content(); ?>
+		<!--<//?php the_content(); ?>-->
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'radiate' ),

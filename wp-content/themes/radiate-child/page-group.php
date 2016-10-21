@@ -10,26 +10,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post();
-			$box_1 = get_field("box_1");
-			$box_2 = get_field("box_2");
-			$box_3 = get_field("box_3");
-			$box_4 = get_field("box_4");
-			$box_5 = get_field("box_5");
-			$box_6 = get_field("box_6");
-			$box_7 = get_field("box_7");
-			$box_8 = get_field("box_8");
-			$box_9 = get_field("box_9");
-			$box_10 = get_field("box_10");
-			$box_11 = get_field("box_11");
-			$box_12 = get_field("box_12");
-			$box_13 = get_field("box_13");
-			$box_14 = get_field("box_14");
-			$box_15 = get_field("box_15");
-			$box_16 = get_field("box_16");
-			$box_17 = get_field("box_17");
-			$box_18 = get_field("box_18");
-			$box_19 = get_field("box_19");
-			$box_20 = get_field("box_20");
+
 			?>
 
 				<div class="entry-content">
@@ -129,76 +110,7 @@ get_header(); ?>
 							</li>
 						</ul>
 
-						<!--<section class="box1">
-							<section class="group-modal1">
-								<section class="group-content">
-									<?php echo $box_1; ?>
-									<a href="http://localhost/allesvdk/art-jan-de-vries/">
-										Lees meer
-									</a>
-								</section>
-							</section>
-						</section>
-						<section class="box2">
-							<section class="group-modal2">
-								<section class="group-content">
-									<?php echo $box_2; ?>
-								</section>
-								<section class="read-more">
-									<a href="#">
-										Lees meer
-									</a>
-								</section>
-							</section>
-						</section>
-						<section class="box3">
-							<?php echo $box_3; ?>
-						</section>
-						<section class="box4">
-							<?php echo $box_4; ?>
-						</section>
-						<section class="box5">
-							<?php echo $box_5; ?>
-						</section>
-						<section class="box6">
-							<?php echo $box_6; ?>
-						</section>
-						<section class="box7">
-							<?php echo $box_7; ?>
-						</section>
-						<section class="box8">
-							<?php echo $box_8; ?>
-						</section>
-						<section class="box9">
-							<?php echo $box_9; ?>
-						</section>
-						<section class="box10">
-							<?php echo $box_10; ?>
-						</section>
-						<section class="box11">
-							<?php echo $box_11; ?>
-						</section>
-						<section class="box12">
-							<?php echo $box_12; ?>
-						</section>
-						<section class="box13">
-							<?php echo $box_13; ?>
-						</section>
-						<section class="box14">
-							<?php echo $box_14; ?>
-						</section>
-						<section class="box15">
-							<?php echo $box_4; ?>
-						</section>
-						<section class="box16">
-							<?php echo $box_16; ?>
-						</section>
-						<section class="box17">
-							<?php echo $box_17; ?>
-						</section>
-						<section class="box18">
-							<?php echo $box_18; ?>
-						</section>-->
+
 					</div>
 				<?php endwhile; // end of the loop. ?>
 				<?php wp_reset_query(); // resets the altered query back to the original ?>

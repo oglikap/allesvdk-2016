@@ -30,7 +30,8 @@ and Blueprint http://www.blueprintcss.org/
   font-family: 'Scooter';
   src: url("fonts/2FDF27_3D_0.woff2") format("woff2"), url("fonts/2FDF27_3D_0.woff") format("woff"), url("fonts/2FDF27_3D_0.ttf") format("truetype"), url("fonts/2FDF27_3D_0.eot") format("eot"); }
 body {
-  font-family: "AvenirNextLTPro-Medium", "Josefin Sans", sans-serif; }
+  font-family: "AvenirNextLTPro-Medium", "Josefin Sans", sans-serif;
+  background-color: #eaeaea; }
 
 h1,
 h2,
@@ -42,6 +43,11 @@ h6 {
 
 p {
   font-family: "AvenirNextLTPro-Medium", "Josefin Sans", sans-serif; }
+
+/* =Layout
+----------------------------------------------- */
+#primary {
+  margin-top: -15em; }
 
 header#masthead.site-header {
   margin-bottom: 440px; }
@@ -62,19 +68,26 @@ h6,
   background-color: #fff;
   opacity: 0.9; }
 
-h1.entry-title {
+h1.entry-title,
+h2.entry-title {
   margin: 0 auto;
-  width: 50%; }
+  width: 65%; }
+  h1.entry-title .dot,
+  h2.entry-title .dot {
+    color: #777; }
 
 h2.title {
-  margin: 80px auto 0;
+  margin: 0 auto -6.5em;
   text-align: right;
-  color: #777;
-  text-shadow: 1px 1px white;
+  color: #fff;
+  text-shadow: 1px 1px grey;
   font-size: 3em;
   padding: 8px 4px;
   opacity: 1;
-  font-family: 'Scooter'; }
+  font-family: 'Scooter';
+  position: absolute;
+  top: 3%;
+  right: 2%; }
   h2.title .dot {
     color: orange; }
 
@@ -101,7 +114,9 @@ h3.subheader {
 
 .main-navigation ul li ul li a:hover,
 .main-navigation ul li ul li:hover > a,
-.main-navigation ul li.current-menu-item ul li a:hover {
+.main-navigation ul li.current-menu-item ul li a:hover,
+.main-small-navigation ul > .current_page_item,
+.main-small-navigation ul > .current-menu-item {
   background-color: #ff0000;
   color: #ffffff;
   font-size: 1em; }
@@ -122,9 +137,6 @@ figure.image1 {
   width: 100% !important;
   text-align: center;
   margin-bottom: 3em; }
-
-#primary {
-  margin-top: -15em; }
 
 .header-search-icon {
   border-left: none; }
@@ -164,9 +176,10 @@ ul.playlist2 {
   color: #ff0000;
   background-color: white; }
 
-article.front-image-right {
+article.front-image {
   width: 90%;
-  float: right; }
+  margin: 0 auto;
+  padding: 0.5em 0; }
 
 article.front-image-left {
   width: 90%;
@@ -332,21 +345,36 @@ body.page-id-240 #parallax-bg {
 body.page-id-301 #parallax-bg {
   background-image: url(img/kroon/header-large.jpg); }
 
+body.page-id-56 #parallax-bg {
+  background-image: url(img/kamps/header-large.jpg); }
+
+body.page-id-133 #parallax-bg {
+  background-image: url(img/boost/header-large.jpg); }
+
+body.page-id-43 #parallax-bg {
+  background-image: none; }
+
 blockquote {
   border: none;
   clear: both;
+  margin-left: 1em;
   border-left: 3px solid #fff2ad;
   padding: 0 2%; }
   blockquote p {
     color: black; }
 
 #colophon {
-  background-color: black;
-  color: white; }
+  background-color: inherit;
+  color: #ff0000;
+  border-top: 1px dotted #ff0000; }
+  #colophon a {
+    color: #777; }
+  #colophon a:hover {
+    color: #999; }
 
 ul.sub-menu .menu-item {
   border-bottom: 1px solid #ff0000;
-  line-height: 2.5em; }
+  line-height: 2em; }
 
 ul.sub-menu .menu-item:last-child {
   border-bottom: none; }
@@ -355,328 +383,15 @@ ul.sub-menu .menu-item:last-child {
   background-color: black;
   padding: 1%; }
 
-.box1,
-.box2,
-.box3,
-.box4,
-.box5,
-.box6,
-.box7,
-.box8,
-.box9,
-.box10,
-.box11,
-.box12,
-.box13,
-.box14,
-.box15,
-.box16 {
-  width: 25%;
-  height: 25vw;
-  float: left;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  align-items: center; }
-  .box1 .group-modal1,
-  .box1 .group-modal2,
-  .box2 .group-modal1,
-  .box2 .group-modal2,
-  .box3 .group-modal1,
-  .box3 .group-modal2,
-  .box4 .group-modal1,
-  .box4 .group-modal2,
-  .box5 .group-modal1,
-  .box5 .group-modal2,
-  .box6 .group-modal1,
-  .box6 .group-modal2,
-  .box7 .group-modal1,
-  .box7 .group-modal2,
-  .box8 .group-modal1,
-  .box8 .group-modal2,
-  .box9 .group-modal1,
-  .box9 .group-modal2,
-  .box10 .group-modal1,
-  .box10 .group-modal2,
-  .box11 .group-modal1,
-  .box11 .group-modal2,
-  .box12 .group-modal1,
-  .box12 .group-modal2,
-  .box13 .group-modal1,
-  .box13 .group-modal2,
-  .box14 .group-modal1,
-  .box14 .group-modal2,
-  .box15 .group-modal1,
-  .box15 .group-modal2,
-  .box16 .group-modal1,
-  .box16 .group-modal2 {
-    width: 85%;
-    height: 85%;
-    background-image: url(img/artjan_small.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100% 80%;
-    background-color: #c1c1c1;
-    opacity: 0.8;
-    border: 3px solid white;
-    border: 1px solid black;
-    margin: 0 auto; }
-    .box1 .group-modal1 .group-content,
-    .box1 .group-modal2 .group-content,
-    .box2 .group-modal1 .group-content,
-    .box2 .group-modal2 .group-content,
-    .box3 .group-modal1 .group-content,
-    .box3 .group-modal2 .group-content,
-    .box4 .group-modal1 .group-content,
-    .box4 .group-modal2 .group-content,
-    .box5 .group-modal1 .group-content,
-    .box5 .group-modal2 .group-content,
-    .box6 .group-modal1 .group-content,
-    .box6 .group-modal2 .group-content,
-    .box7 .group-modal1 .group-content,
-    .box7 .group-modal2 .group-content,
-    .box8 .group-modal1 .group-content,
-    .box8 .group-modal2 .group-content,
-    .box9 .group-modal1 .group-content,
-    .box9 .group-modal2 .group-content,
-    .box10 .group-modal1 .group-content,
-    .box10 .group-modal2 .group-content,
-    .box11 .group-modal1 .group-content,
-    .box11 .group-modal2 .group-content,
-    .box12 .group-modal1 .group-content,
-    .box12 .group-modal2 .group-content,
-    .box13 .group-modal1 .group-content,
-    .box13 .group-modal2 .group-content,
-    .box14 .group-modal1 .group-content,
-    .box14 .group-modal2 .group-content,
-    .box15 .group-modal1 .group-content,
-    .box15 .group-modal2 .group-content,
-    .box16 .group-modal1 .group-content,
-    .box16 .group-modal2 .group-content {
-      height: 80%;
-      text-align: center; }
-      .box1 .group-modal1 .group-content h4.group-title, .box1 .group-modal1 .group-content p,
-      .box1 .group-modal2 .group-content h4.group-title,
-      .box1 .group-modal2 .group-content p,
-      .box2 .group-modal1 .group-content h4.group-title,
-      .box2 .group-modal1 .group-content p,
-      .box2 .group-modal2 .group-content h4.group-title,
-      .box2 .group-modal2 .group-content p,
-      .box3 .group-modal1 .group-content h4.group-title,
-      .box3 .group-modal1 .group-content p,
-      .box3 .group-modal2 .group-content h4.group-title,
-      .box3 .group-modal2 .group-content p,
-      .box4 .group-modal1 .group-content h4.group-title,
-      .box4 .group-modal1 .group-content p,
-      .box4 .group-modal2 .group-content h4.group-title,
-      .box4 .group-modal2 .group-content p,
-      .box5 .group-modal1 .group-content h4.group-title,
-      .box5 .group-modal1 .group-content p,
-      .box5 .group-modal2 .group-content h4.group-title,
-      .box5 .group-modal2 .group-content p,
-      .box6 .group-modal1 .group-content h4.group-title,
-      .box6 .group-modal1 .group-content p,
-      .box6 .group-modal2 .group-content h4.group-title,
-      .box6 .group-modal2 .group-content p,
-      .box7 .group-modal1 .group-content h4.group-title,
-      .box7 .group-modal1 .group-content p,
-      .box7 .group-modal2 .group-content h4.group-title,
-      .box7 .group-modal2 .group-content p,
-      .box8 .group-modal1 .group-content h4.group-title,
-      .box8 .group-modal1 .group-content p,
-      .box8 .group-modal2 .group-content h4.group-title,
-      .box8 .group-modal2 .group-content p,
-      .box9 .group-modal1 .group-content h4.group-title,
-      .box9 .group-modal1 .group-content p,
-      .box9 .group-modal2 .group-content h4.group-title,
-      .box9 .group-modal2 .group-content p,
-      .box10 .group-modal1 .group-content h4.group-title,
-      .box10 .group-modal1 .group-content p,
-      .box10 .group-modal2 .group-content h4.group-title,
-      .box10 .group-modal2 .group-content p,
-      .box11 .group-modal1 .group-content h4.group-title,
-      .box11 .group-modal1 .group-content p,
-      .box11 .group-modal2 .group-content h4.group-title,
-      .box11 .group-modal2 .group-content p,
-      .box12 .group-modal1 .group-content h4.group-title,
-      .box12 .group-modal1 .group-content p,
-      .box12 .group-modal2 .group-content h4.group-title,
-      .box12 .group-modal2 .group-content p,
-      .box13 .group-modal1 .group-content h4.group-title,
-      .box13 .group-modal1 .group-content p,
-      .box13 .group-modal2 .group-content h4.group-title,
-      .box13 .group-modal2 .group-content p,
-      .box14 .group-modal1 .group-content h4.group-title,
-      .box14 .group-modal1 .group-content p,
-      .box14 .group-modal2 .group-content h4.group-title,
-      .box14 .group-modal2 .group-content p,
-      .box15 .group-modal1 .group-content h4.group-title,
-      .box15 .group-modal1 .group-content p,
-      .box15 .group-modal2 .group-content h4.group-title,
-      .box15 .group-modal2 .group-content p,
-      .box16 .group-modal1 .group-content h4.group-title,
-      .box16 .group-modal1 .group-content p,
-      .box16 .group-modal2 .group-content h4.group-title,
-      .box16 .group-modal2 .group-content p {
-        padding-top: 8px;
-        color: white;
-        text-shadow: 1px 1px black; }
-      .box1 .group-modal1 .group-content p,
-      .box1 .group-modal2 .group-content p,
-      .box2 .group-modal1 .group-content p,
-      .box2 .group-modal2 .group-content p,
-      .box3 .group-modal1 .group-content p,
-      .box3 .group-modal2 .group-content p,
-      .box4 .group-modal1 .group-content p,
-      .box4 .group-modal2 .group-content p,
-      .box5 .group-modal1 .group-content p,
-      .box5 .group-modal2 .group-content p,
-      .box6 .group-modal1 .group-content p,
-      .box6 .group-modal2 .group-content p,
-      .box7 .group-modal1 .group-content p,
-      .box7 .group-modal2 .group-content p,
-      .box8 .group-modal1 .group-content p,
-      .box8 .group-modal2 .group-content p,
-      .box9 .group-modal1 .group-content p,
-      .box9 .group-modal2 .group-content p,
-      .box10 .group-modal1 .group-content p,
-      .box10 .group-modal2 .group-content p,
-      .box11 .group-modal1 .group-content p,
-      .box11 .group-modal2 .group-content p,
-      .box12 .group-modal1 .group-content p,
-      .box12 .group-modal2 .group-content p,
-      .box13 .group-modal1 .group-content p,
-      .box13 .group-modal2 .group-content p,
-      .box14 .group-modal1 .group-content p,
-      .box14 .group-modal2 .group-content p,
-      .box15 .group-modal1 .group-content p,
-      .box15 .group-modal2 .group-content p,
-      .box16 .group-modal1 .group-content p,
-      .box16 .group-modal2 .group-content p {
-        font-size: .875em; }
-    .box1 .group-modal1 .read-more,
-    .box1 .group-modal2 .read-more,
-    .box2 .group-modal1 .read-more,
-    .box2 .group-modal2 .read-more,
-    .box3 .group-modal1 .read-more,
-    .box3 .group-modal2 .read-more,
-    .box4 .group-modal1 .read-more,
-    .box4 .group-modal2 .read-more,
-    .box5 .group-modal1 .read-more,
-    .box5 .group-modal2 .read-more,
-    .box6 .group-modal1 .read-more,
-    .box6 .group-modal2 .read-more,
-    .box7 .group-modal1 .read-more,
-    .box7 .group-modal2 .read-more,
-    .box8 .group-modal1 .read-more,
-    .box8 .group-modal2 .read-more,
-    .box9 .group-modal1 .read-more,
-    .box9 .group-modal2 .read-more,
-    .box10 .group-modal1 .read-more,
-    .box10 .group-modal2 .read-more,
-    .box11 .group-modal1 .read-more,
-    .box11 .group-modal2 .read-more,
-    .box12 .group-modal1 .read-more,
-    .box12 .group-modal2 .read-more,
-    .box13 .group-modal1 .read-more,
-    .box13 .group-modal2 .read-more,
-    .box14 .group-modal1 .read-more,
-    .box14 .group-modal2 .read-more,
-    .box15 .group-modal1 .read-more,
-    .box15 .group-modal2 .read-more,
-    .box16 .group-modal1 .read-more,
-    .box16 .group-modal2 .read-more {
-      width: 100%;
-      height: 20%;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      -moz-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      align-items: center; }
-      .box1 .group-modal1 .read-more a,
-      .box1 .group-modal2 .read-more a,
-      .box2 .group-modal1 .read-more a,
-      .box2 .group-modal2 .read-more a,
-      .box3 .group-modal1 .read-more a,
-      .box3 .group-modal2 .read-more a,
-      .box4 .group-modal1 .read-more a,
-      .box4 .group-modal2 .read-more a,
-      .box5 .group-modal1 .read-more a,
-      .box5 .group-modal2 .read-more a,
-      .box6 .group-modal1 .read-more a,
-      .box6 .group-modal2 .read-more a,
-      .box7 .group-modal1 .read-more a,
-      .box7 .group-modal2 .read-more a,
-      .box8 .group-modal1 .read-more a,
-      .box8 .group-modal2 .read-more a,
-      .box9 .group-modal1 .read-more a,
-      .box9 .group-modal2 .read-more a,
-      .box10 .group-modal1 .read-more a,
-      .box10 .group-modal2 .read-more a,
-      .box11 .group-modal1 .read-more a,
-      .box11 .group-modal2 .read-more a,
-      .box12 .group-modal1 .read-more a,
-      .box12 .group-modal2 .read-more a,
-      .box13 .group-modal1 .read-more a,
-      .box13 .group-modal2 .read-more a,
-      .box14 .group-modal1 .read-more a,
-      .box14 .group-modal2 .read-more a,
-      .box15 .group-modal1 .read-more a,
-      .box15 .group-modal2 .read-more a,
-      .box16 .group-modal1 .read-more a,
-      .box16 .group-modal2 .read-more a {
-        color: white;
-        padding: 2%;
-        border: 1px solid white; }
-  .box1 .group-modal2,
-  .box2 .group-modal2,
-  .box3 .group-modal2,
-  .box4 .group-modal2,
-  .box5 .group-modal2,
-  .box6 .group-modal2,
-  .box7 .group-modal2,
-  .box8 .group-modal2,
-  .box9 .group-modal2,
-  .box10 .group-modal2,
-  .box11 .group-modal2,
-  .box12 .group-modal2,
-  .box13 .group-modal2,
-  .box14 .group-modal2,
-  .box15 .group-modal2,
-  .box16 .group-modal2 {
-    background-image: url(img/beppe-costa-small.jpg); }
-
-.box3,
-.box7 {
-  float: right; }
-
-ul.img-list {
+ul.img-list,
+article ul.news-main {
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-align: center; }
 
-ul.img-list li {
+ul.img-list li,
+article ul.news-main li {
   display: inline-block;
   height: 200px;
   margin: 0 1em 1em 0;
@@ -707,9 +422,91 @@ span.text-content span {
 ul.img-list li:hover span.text-content {
   opacity: 1; }
 
-@media screen and (max-width: 782px) {
+/* NEWS*/
+ul.news-main li {
+  width: 30%;
+  vertical-align: baseline;
+  height: auto; }
+
+ul.news-main {
+  width: 95%;
+  margin: 1em auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300vh;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start; }
+
+.news-excerpt {
+  background-color: #f1f1f1;
+  -webkit-border-radius: 1%;
+  -moz-border-radius: 1%;
+  -ms-border-radius: 1%;
+  border-radius: 1%;
+  padding: 1% 0; }
+  .news-excerpt p {
+    padding: 2%; }
+  .news-excerpt h2 {
+    letter-spacing: -2px; }
+    .news-excerpt h2 a {
+      color: #ff0000; }
+
+span.news-image {
+  width: 100%; }
+
+/* Small menu */
+.site-header .menu-toggle:hover {
+  background: #ff0000; }
+
+.main-small-navigation li:hover {
+  background: #ff0000; }
+
+.main-small-navigation ul > .current_page_item,
+.main-small-navigation ul > .current-menu-item {
+  background: #ff0000; }
+
+.main-small-navigation ul li ul li a:hover,
+.main-small-navigation ul li ul li:hover > a,
+.main-small-navigation ul li.current-menu-item ul li a:hover {
+  background-color: #ff0000; }
+
+@media screen and (max-width: 768px) {
+  #primary,
+  #secondary {
+    float: none;
+    width: 100%; }
+
+  #parallax-bg {
+    margin-top: 3em; }
+
   body {
     width: 100%; }
+
+  h1.site-title a img {
+    width: 70%; }
+
+  .site-branding {
+    max-width: 40%; }
+
+  .main-small-navigation ul.menunav-menu {
+    width: 60%; }
+
+  .main-navigation {
+    max-width: 36%; }
 
   h1.entry-title,
   h3.subheader,
@@ -717,15 +514,16 @@ ul.img-list li:hover span.text-content {
   section.main-content2,
   section.side-content2,
   section.side-content {
-    width: 100%; } }
+    width: 100%; }
+
+  h2.title {
+    top: 2%; }
+
+  ul.sub-menu .menu-item {
+    line-height: 0.75em; } }
 @media screen and (max-width: 320px) {
   header#masthead.site-header {
     margin-bottom: 100px; }
-
-  h2.title {
-    margin: 130px auto 0;
-    font-size: 2em;
-    max-width: 100%; }
 
   .site-branding {
     max-width: 50%; }
@@ -745,15 +543,23 @@ ul.img-list li:hover span.text-content {
     line-height: 1em; }
 
   h2.title {
-    margin: 130px auto 0;
-    font-size: 2em;
-    max-width: 100%; }
+    font-size: 2em; }
 
   p {
     line-height: 1.25em;
-    text-align: left; }
+    text-align: left;
+    font-size: 0.875em; }
+
+  h4.side-title {
+    font-size: 1.125em; }
+
+  h1.entry-title {
+    line-height: 1.125em; }
 
   section.main-content {
-    border: none; } }
+    border: none; }
+
+  section.credits-block {
+    max-width: 95%; } }
 
 /*# sourceMappingURL=style.css.map */
